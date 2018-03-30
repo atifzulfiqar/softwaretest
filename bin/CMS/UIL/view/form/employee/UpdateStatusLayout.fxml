@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" styleClass="Form-Background" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CMS.UIL.view.form.employee.UpdateCourierController">
+   <children>
+      <Label layoutX="23.0" layoutY="14.0" styleClass="Form-header" text="Update Courier Details" />
+      <Label layoutX="89.0" layoutY="92.0" styleClass="Variable-Labe" text="Search Courier By ID" />
+      <TextField fx:id="courierID" layoutX="226.0" layoutY="81.0" promptText="Enter Courier ID.........">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="424.0" layoutY="81.0" mnemonicParsing="false" onAction="#findOpt" prefHeight="39.0" prefWidth="63.0" text="Find" textFill="#2a19e4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="99.0" layoutY="162.0" prefHeight="167.0" prefWidth="402.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="162.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="240.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="Variable-Labe" text="Sender Name \ Sender ID" />
+            <Label styleClass="Variable-Labe" text="Receiver Name" GridPane.rowIndex="1" />
+            <Label styleClass="Variable-Labe" text="Courier Type" GridPane.rowIndex="2" />
+            <Label styleClass="Variable-Labe" text="Courier Weight" GridPane.rowIndex="3" />
+            <Label styleClass="Variable-Labe" text="Delivery Status" GridPane.rowIndex="5" />
+            <Label fx:id="sname" styleClass="variable-value" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="rname" styleClass="variable-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="type" styleClass="variable-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="weight" styleClass="variable-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="status" prefHeight="30.0" prefWidth="241.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Register On" GridPane.rowIndex="4" />
+            <Label fx:id="registerOn" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="updateBtn" layoutX="351.0" layoutY="375.0" mnemonicParsing="false" onAction="#updateOpt" text="Update Courier">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMsg" layoutX="226.0" layoutY="41.0" text="Label" textFill="#da2121" />
+   </children>
+</AnchorPane>

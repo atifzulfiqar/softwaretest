@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="1500.0" stylesheets="@../../CSS/MainStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CMS.BLL.controller.SystemController">
+   <top>
+      <MenuBar stylesheets="@../../css/theme.css" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Profile" />
+                  <MenuItem mnemonicParsing="false" text="Log Out" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manages Employee">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddEmployeeOpt" text="Hire Employee" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewEmployeeOpt" text="View Employee List" />
+                  <Menu mnemonicParsing="false" text="Edit Employee">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#upgradeOpt" text="Promote / Demote" />
+                        <MenuItem mnemonicParsing="false" onAction="#editEmployeeOpt" text="Update Employee" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manages Customer">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddCustomerOpt" text="Add New Customer" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewCustomerOpt" text="View Customer List" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manages Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ManageAccountOpt" text="Update Accounts" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Manages Allowances">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddAllowanceListOpt" text="Add Allowances List" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewAllowancesOpt" text="view Allowances List" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manages Rate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddRateOpt" text="Add New Rate" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateRateOpt" text="Update Rate list" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View Report">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#viewCourierOpt" text="View Couriers" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

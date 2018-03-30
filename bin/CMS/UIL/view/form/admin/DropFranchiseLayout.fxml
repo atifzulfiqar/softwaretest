@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" styleClass="Form-Background" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CMS.UIL.view.form.admin.DropFranchiseController">
+   <children>
+      <Label layoutX="23.0" layoutY="14.0" styleClass="Form-header" text="Drop Franchise" />
+      <GridPane layoutX="63.0" layoutY="65.0" prefHeight="167.0" prefWidth="402.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label styleClass="Variable-Labe" text="Franchise Name" />
+            <Label styleClass="Variable-Labe" text="Franchise Location" GridPane.rowIndex="1" />
+            <Label styleClass="Variable-Labe" text="Franchise Contact Number" GridPane.rowIndex="2" />
+            <Label styleClass="Variable-Labe" text="Franchise Description" GridPane.rowIndex="3" />
+            <Label fx:id="fname" styleClass="variable-value" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="floc" styleClass="variable-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="fcontact" styleClass="variable-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="fdesc" styleClass="variable-value" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Franchise Create On" GridPane.rowIndex="4" />
+            <Label fx:id="fcreateOn" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="DropBtn" layoutX="366.0" layoutY="276.0" mnemonicParsing="false" onAction="#dropFranchise" text="Drop Franchise">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

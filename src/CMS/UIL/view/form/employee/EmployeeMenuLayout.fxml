@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="1000.0" styleClass="Form-Background" stylesheets="@../../css/theme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CMS.BLL.controller.SystemController">
+   <top>
+      <MenuBar styleClass="Form-main-menu" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Profile" />
+                  <MenuItem mnemonicParsing="false" text="Log Out" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manages Courier">
+               <items>
+                  <Menu mnemonicParsing="false" text="Add Courier">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#RegCourierOpt" text="Register Customer" />
+                        <MenuItem mnemonicParsing="false" onAction="#UnregCourierOpt" text="Unregister Customer" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Alter Courier">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#updateCourierOpt" text="Update Courier Details" />
+                        <MenuItem mnemonicParsing="false" onAction="#CancelCourierOpt" text="Cancel Courier" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#viewCourierOpt" text="View Couriers" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewRateListOpt" text="View Rate List" />
+                  <MenuItem mnemonicParsing="false" onAction="#shipmentOpt" text="shipment" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Loan Request">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#LoanRequestOpt" text="Send Loan Request" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

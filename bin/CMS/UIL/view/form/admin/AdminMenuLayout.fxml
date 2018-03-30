@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="1000.0" styleClass="Form-Background" stylesheets="@../../css/theme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CMS.BLL.controller.SystemController">
+   <top>
+      <MenuBar styleClass="Form-main-menu" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Log Out" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manage Franchise">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddFanchiseOpt" text="Add Franchise" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewFranchiseOpt" text="View Franchises" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Manage Manager">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AddManagerOpt" text="Add Manager" />
+                  <MenuItem mnemonicParsing="false" onAction="#FireManagerOpt" text="Fire Manager" />
+                  <MenuItem mnemonicParsing="false" onAction="#ViewManagerOpt" text="View Managers" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Report">
+              <items>
+                  <Menu mnemonicParsing="false" text="view Courier">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#ViewRegCourierOpt" text="Register Customer" />
+                      <MenuItem mnemonicParsing="false" onAction="#ViewUnRegCourierOpt" text="Other Customer" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#ViewAllEmployeeOpt" text="View Employee List" />
+                  <MenuItem mnemonicParsing="false" text="view Log" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
